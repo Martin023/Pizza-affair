@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+/* body{
+    font-family: 'Permanent Marker', cursive;
+} */
+#hero{
+    background-image: url("../assets/images/ivan-torres-hero img.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    height: 100vh;
+    max-width: 100%;
+    font-family: 'Permanent Marker', cursive;
+    color:white;
+}
+ section .options{
+    justify-content: right;
+    padding-right: 10%;
+    cursor: pointer;
+    font-size:24px;
+    display: flex;
+    padding-top: 10%;
+  
+}
+section .header{
+    justify-content:center;
+    align-items: center;
+    font-size:54px;
+    display: flex;
+    padding-top: 10%;
+    
+}
