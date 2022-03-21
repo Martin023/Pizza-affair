@@ -49,6 +49,45 @@ img{
     border-radius: 10px;
     margin-left: 5px;
     padding-left: 3px;
+    box-shadow: inset;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
 }
 
 /* our story */
+#abt{
+    float: left;
+    max-height: 70vh;
+    width: 50vw;
+    margin-left: auto;
+}
+.aboutus{
+    /* display: flex; */
+    justify-content: center;
+    background-color: rgb(173, 173, 164);
+    height: 70vh;
+} 
+.ourstory{
+    max-height: 70vh;
+    padding-top: 10%;
+}
+.aboutus h1{
+    text-decoration: underline;
+    color: rgb(235, 80, 19);
+
+}
+/* menu */
+.menu{
+    padding-top: 10%;
+    height: 70vh;
+}
+.mark img:hover {
+    -moz-animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.images{
+    padding-left: 10px;
+    padding-right: 10px;
+}
