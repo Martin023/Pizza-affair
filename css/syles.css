@@ -250,6 +250,8 @@ input[type=submit]:hover {
     color: #ca0808;
     margin-right: 3%;
 }
+
+/* footer section */
 footer{
     background-color: #252525;
     color: #FAF3F3;
@@ -264,3 +266,169 @@ footer a{
 footer a:hover{
    color: #fa0000;
 }
+
+#order{
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/pablo-pacheco-D3Mag4BKqns-unsplash.jpg");
+    background-size: cover;
+    padding: 3% 0 5% 0;
+    color: #FAF3F3;
+}
+.order-red{
+    background-color: rgba(225, 228, 57, 0.644);
+    padding: 7%;
+}
+.order-red button{
+    padding: 2%;
+    margin: 3% 0 3% 0;
+    border:#FAF3F3 2px solid;
+    background-color: transparent;
+    color: #FAF3F3;
+    
+}
+#p-order, .new-order a{
+    position: relative;
+    left: 30%;
+}
+.form-check-input, .form-select, form input{
+    background-color: transparent;
+    border: #FAF3F3 1px solid;
+}
+.form-select option {
+    background-color: #FAF3F3 !important;
+    color: #DD1C1C !important;
+  }
+  .form-check-input:checked{
+    background-color: #FAF3F3;
+  }
+  .summary{
+      background-color: #FAF3F3;
+      margin-top: 15%;
+  }
+  .summary h3{
+      color: #DD1C1C;
+      margin-top: 4%;
+    
+      text-align: center;
+  }
+}
+#home a:hover, button:hover, .new-order a:hover{
+    transition: 0.5s ease;
+    transform: scale(1.2);
+}
+.order, .location, .delivery, .pick-up ,.summary{
+    display: none;
+}
+#about{
+    background-color: #FAF3F3;
+    padding: 3% 0 3% 0;
+    font-weight: bold;
+}
+#about p:last-child , #about p:first-child{
+    color: #DD1C1C;
+    font-size: larger;
+}
+#our-pizza{
+    background: url("../assets/our_p.jpg");
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 3% 0 5% 0;
+}
+#our-pizza img{
+    margin: 5% 0 5% 0;
+}
+.titles{
+    text-align: center;
+    font-weight: 600;
+    font-size: xx-large;
+}
+.titles span{
+    color: #DD1C1C;
+    font-size: x-large;
+}
+#order{
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/pablo-pacheco-D3Mag4BKqns-unsplash.jpg");
+    background-size: cover;
+    padding: 3% 0 5% 0;
+    color: #FAF3F3;
+}
+.order-red{
+    background-color: rgba(219, 35, 35, 0.639);
+    padding: 7%;
+}
+.order-red button{
+    padding: 2%;
+    margin: 3% 0 3% 0;
+    border:#FAF3F3 2px solid;
+    background-color: transparent;
+    color: #FAF3F3;
+    
+}
+#p-order, .new-order a{
+    position: relative;
+    left: 30%;
+}
+.form-check-input, .form-select, form input{
+    background-color: transparent;
+    border: #FAF3F3 1px solid;
+}
+.form-select option {
+    background-color: #FAF3F3 !important;
+    color: #DD1C1C !important;
+  }
+  .form-check-input:checked{
+    background-color: #FAF3F3;
+  }
+  .summary{
+      background-color: #FAF3F3;
+      margin-top: 15%;
+  }
+  .summary h3{
+      color: #DD1C1C;
+      margin-top: 4%;
+      text-align: center;
+  }
+  #contact-us{
+    background-color: black;
+    color: #FAF3F3;
+  }
+  #contact-us .input-group input{
+    background-color: transparent;
+    border: #FAF3F3 1px solid;
+    border-radius: 30px;
+    margin-left: 3%;
+  } 
+ #contact-us button{
+    color: white;
+    background-color: rgb(221, 28, 28);
+    border: #FAF3F3 1px solid;
+    border-radius: 30px;
+ }
+ #contact-us i{
+     margin-right: 3%;
+     padding-bottom: 3%;
+     color: #a8ad5a;
+ }
+ footer{
+     background-color: #252525;
+     color: #FAF3F3;
+     font-weight: 600;
+     padding: 1% 0 1% 0;
+     text-align: center;
+ }
+ footer a{
+     text-decoration: none;
+     color: #DD1C1C;
+ }
+ footer a:hover{
+    color: #fa0000;
+}
+.new-order a{
+    color: white;
+    background-color: rgb(221, 28, 28);
+    padding: 1%;
+    border-radius: 30px;
+    margin-bottom: 3%;
+}
+
