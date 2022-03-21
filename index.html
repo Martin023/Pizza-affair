@@ -56,11 +56,9 @@
                   <div class="card" style="width: 18rem;">
                     <img src="assets/pizza3.jpg" alt="chicago img">
                     <div class="card-body">
-                      <h5 class="card-title">Neapolitan Pizza</h5>
-                      <p class="card-text">Neapolitan is the original pizza. This delicious pie dates all the way back to 18th century in Naples, Italy.<br>
-                        During this time, the poorer citizens of this seaside city frequently purchased food that was cheap and could be eaten quickly.<br> 
-                        Luckily for them, Neapolitan pizza was affordable and readily available through numerous street vendors.
-                       .</p>
+                      <h5 class="card-title">New-York Pizza</h5>
+                      <p class="card-text">With its characteristic large, foldable slices and crispy outer crust, New York-style pizza is one of America’s most famous regional pizza types.<br>
+                         Originally a variation of Neapolitan-style pizza, the New York slice has taken on a fame all its own, with some saying its unique flavor has to do with the minerals present in New York’s tap water supply.</p>
                       
                     </div>
                   </div>
@@ -90,21 +88,37 @@
         A slideshow of images in here (whatever you want to say for screen readers)
         
         <marquee behavior="scroll" direction="left" class="mark">
-            <div class="images">
-                <img src="assets/seafood.jpg" width="250" height="150" alt="menu">
-                <img src="assets/menu/menu1.jpg" width="250" height="150" alt="menu" padding="20px">
-                <img src="assets/menu/menu2.jpg" width="250" height="150" alt="menu">
-                <img src="assets/menu/menu3.jpg" width="250" height="150" alt="Flying Bat">
-                <img src="assets/menu/menu4.jpg" width="250" height="150" alt="Flying Bat">
-                <img src="assets/menu/menu5.jpg" width="250" height="150" alt="Flying Bat">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="images">
+                    <div class="col-lg-3 col-sm-6">
+                        <img src="assets/menu/menu4.jpg" width="250" height="150" alt="Flying Bat">
+                        
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <img src="assets/menu/menu1.jpg" width="250" height="150" alt="menu" padding="20px">
+                        
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <img src="assets/menu/menu2.jpg" width="250" height="150" alt="menu">
+                        
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <img src="assets/menu/menu3.jpg" width="250" height="150" alt="Flying Bat">
+                        
+                    </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </marquee>
     </section>
 
 
-    <section>
+    <section class="chef">
+        <h1>MEET OUR CHEF</h1>
         <div>
-            <h1>MEET OUR CHEF</h1>
+            <img src="assets/images/louis-hansel  chef.jpg" alt="Chef">
             <p>Lorem ipsum dolor sit amet consectetur adipi
                 sicing elit. Ad minus accusantium neque nesciunt f
                 ugiat eum in quia sint doloremque quidem, ex c
@@ -115,8 +129,80 @@
         
     </section>
     <section>
-        <h1>ORDER NO!!</h1>
-
+        <h1>ORDER NOW!</h1>
+        <form id="order" action="">
+            <div class="form-group">
+                <label for="size">Pizza Size</label>
+                <select class="form-select text-light my-2" aria-label="Default select example" id="size" required>
+                    <option value="Large" style="color: black;">Large(Ksh 1000)</option>
+                    <option value="Medium"style="color: black;">Medium(Ksh 700)</option>
+                    <option value="Small"style="color: black;">Small(Ksh 500)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="crust">Select Crust type</label>
+                <select class="form-select text-light my-2" aria-label="Default select example" id="crust" required>
+                    <option value="Butter-Cheese">Butter-Cheese(Ksh 200)</option>
+                    <option value="Garlic-buttery-blend">Garlic-buttery-blend(Ksh 180)</option>
+                    <option value="Gluten-free">Gluten-free(Ksh 250)</option>
+                    <option value="Fiery-red-pepper">Fiery-red-pepper(Ksh 150)</option>
+                </select>
+            </div>
+            <div class="form-group my-3">
+                <label for="amount">How may of us</label> <br>
+                <input class="text-light" type="number" min="1" id="amount" placeholder="Number of pizzas" required>
+            </div>
+            <div class="form-check-inline">
+                <input class="form-check-input" name="toppings" type="checkbox" value="Mushrooms">
+                <label class="form-check-label" >Mushrooms</label>
+            </div>
+            <div class="form-check-inline">
+                <input class="form-check-input" name="toppings" type="checkbox" value="Bacon">
+                <label class="form-check-label">Bacon</label>
+            </div> <br>
+            <div class="form-check-inline">
+                <input class="form-check-input" name="toppings" type="checkbox" value="Pepperoni">
+                <label class="form-check-label">Pepperoni</label>
+            </div>
+            <div class="form-check-inline">
+                <input class="form-check-input" name="toppings" type="checkbox" value="Sausage">
+                <label class="form-check-label" >Sausage</label>
+            </div>
+            <div class="form-check-inline">
+                <input class="form-check-input" name="toppings" type="checkbox" value="Pineapple">
+                <label class="form-check-label">Pineapple</label>
+            </div><br>
+            <div class="form-check-inline">
+                <input class="form-check-input" name="toppings" type="checkbox" value="Spinach">
+                <label class="form-check-label">Spinach</label>
+            </div>
+           
+            <div class="form-check-inline">
+                <input class="form-check-input" name="toppings" type="checkbox" value="Chicken">
+                <label class="form-check-label">Chicken</label>
+            </div> <br>
+            <button id="p-order" type="submit" >Make Order</button>
+        </form>
+        <div class="order">
+            <p>You have ordered: <br> <strong><span></span></strong></p>
+            <p>Would you like to:</p>
+            <button id="deliver" type="button" >Get it delivered</button>  <button id="instore">instore pick-up</button>
+        </div>
+        <div class="location">
+            <form action="">
+                <input class="p-3 text-light" type="text" placeholder="Enter Delivery location" required>
+                <button type="submit" >enter</button>
+            </form>
+        </div>
+        <div class="delivery">
+            <p>Your delivery to <strong><span></span></strong> is being processed and will cost Ksh 200</p>
+            <button class="checkout" type="button" >Checkout</button>
+        </div>
+        <div class="pick-up">
+            <p>Your Order will be ready in 45 minutes</p>
+            <button class="checkout" type="button" >Checkout</button>
+        </div>
+    </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
