@@ -1,6 +1,6 @@
 # Pizza-affair
-A landing page for Delani Studio, a software development company (IP week 3) 14/03/2022.
-Areas of learning targeted are BDD, jQuery, Introduction to Api's and Responsive design.
+A pizza joint website for ordering pizza (IP week 4) 21/03/2022.
+Areas of learning targeted are BDD, jQuery, Responsive design, constructors and prototypes.
 #### By Martin Maina
 Here is the live demo :https://martin023.github.io/Pizza-affair/
 ## Table of Contents
