@@ -137,65 +137,142 @@
         </div>
         
     </section>
-    <section>
-        <h1>ORDER NOW!</h1>
-        <form id="order" action="">
-            <div class="form-group">
-                <label for="size">Pizza Size</label>
-                <select  id="size" required>
-                    <option value="Large" >Large(Ksh 1000)</option>
-                    <option value="Medium">Medium(Ksh 700)</option>
-                    <option value="Small"s>Small(Ksh 500)</option>
-                </select>
+    <section id="order">
+        <div class="titles">DONT JUST STARVE THERE, MAKE YOUR ORDER</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                   <div class="order-red">
+                    <form id="make-pizza" action="">
+                        <div class="form-group">
+                            <label for="size">Select Pizza Size</label>
+                            <select class="form-select text-light my-2" aria-label="Default select example" id="size" required>
+                                <option value="Large">Large(Ksh 1000)</option>
+                                <option value="Medium">Medium(Ksh 700)</option>
+                                <option value="Small">Small(Ksh 500)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="crust">Select Crust type</label>
+                            <select class="form-select text-light my-2" aria-label="Default select example" id="crust" required>
+                                <option value="Butter-Cheese">Butter-Cheese(Ksh 200)</option>
+                                <option value="Garlic-buttery-blend">Garlic-buttery-blend(Ksh 180)</option>
+                                <option value="Gluten-free">Gluten-free(Ksh 250)</option>
+                                <option value="Fiery-red-pepper">Fiery-red-pepper(Ksh 150)</option>
+                            </select>
+                        </div>
+                        <div class="form-group my-3">
+                            <label for="amount">Select Pizza amount</label> <br>
+                            <input class="text-light" type="number" min="1" id="amount" placeholder="Number of pizzas" required>
+                        </div>
+            
+                        <div class="form-check-inline">
+                            <input class="form-check-input" name="toppings" type="checkbox" value="Mushrooms">
+                            <label class="form-check-label" >Mushrooms</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" name="toppings" type="checkbox" value="Bacon">
+                            <label class="form-check-label">Bacon</label>
+                        </div> <br>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" name="toppings" type="checkbox" value="Pepperoni">
+                            <label class="form-check-label">Pepperoni</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" name="toppings" type="checkbox" value="Sausage">
+                            <label class="form-check-label" >Sausage</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" name="toppings" type="checkbox" value="Pineapple">
+                            <label class="form-check-label">Pineapple</label>
+                        </div><br>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" name="toppings" type="checkbox" value="Spinach">
+                            <label class="form-check-label">Spinach</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" name="toppings" type="checkbox" value="Black Olives">
+                            <label class="form-check-label" >Black Olives</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" name="toppings" type="checkbox" value="Chicken">
+                            <label class="form-check-label">Chicken</label>
+                        </div> <br>
+                        <button id="p-order" type="submit" >Make Order</button>
+                    </form>
+                    <div class="order">
+                        <p>You have ordered: <br> <strong><span></span></strong></p>
+                        <p>Would you like to:</p>
+                        <button id="deliver" type="button" >Get it delivered</button>  <button id="instore">instore pick-up</button>
+                    </div>
+                    <div class="location">
+                        <form action="">
+                            <input class="p-3 text-light" type="text" placeholder="Enter Delivery location" required>
+                            <button type="submit" >enter</button>
+                        </form>
+                    </div>
+                    <div class="delivery">
+                        <p>Your delivery to <strong><span></span></strong> is being processed and will cost Ksh 200</p>
+                        <button class="checkout" type="button" >Checkout</button>
+                    </div>
+                    <div class="pick-up">
+                        <p>Your Order will be ready in 45 minutes</p>
+                        <button class="checkout" type="button" >Checkout</button>
+                    </div>
+                </div>
+                   </div>
+                <div class="col-lg-6">
+                    <div class="summary">
+                        <h3>Order Summary:</h3>
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Amount</th>
+                                <th scope="col">size</th>
+                                <th scope="col">crust</th>
+                                <th scope="col">topping(s)</th>
+                                <th scope="col">price</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                  <td id="p-amount"></td>
+                                  <td id="p-size"></td>
+                                  <td id="p-crust"></td>
+                                  <td id="p-toppings"></td>
+                                  <td id="p-price">Ksh <span></span> (for one)</td>
+                              </tr>
+                              <tr>
+                                  <td><strong>Total:</strong></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td id="cost">Ksh </td>
+                              </tr>
+                            </tbody>
+                            <thead>
+                                <tr>
+                                  <th scope="col">Delivery Cost</th>
+                                  <th scope="col">Grand Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="p-deli">Ksh </td>
+                                    <td id="deli-cost">Ksh </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="new-order"> 
+                            <a class="btn" href="#order" role="button"><strong>New Order</strong></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="crust">Select Crust type</label>
-                <select aria-label="Default select example" id="crust" required>
-                    <option value="Butter-Cheese">Butter-Cheese(Ksh 200)</option>
-                    <option value="Garlic-buttery-blend">Garlic-buttery-blend(Ksh 180)</option>
-                    <option value="Gluten-free">Gluten-free(Ksh 250)</option>
-                    <option value="Fiery-red-pepper">Fiery-red-pepper(Ksh 150)</option>
-                </select>
-            </div>
-            <div class="form-group my-3">
-                <label for="amount">How may of us</label> <br>
-                <input class="text-light" type="number" min="1" id="amount" placeholder="Number of pizzas" required>
-            </div>
-            <div class="form-check-inline">
-                <input class="form-check-input" name="toppings" type="checkbox" value="Mushrooms">
-                <label class="form-check-label" >Mushrooms</label>
-            </div>
-            <div class="form-check-inline">
-                <input class="form-check-input" name="toppings" type="checkbox" value="Bacon">
-                <label class="form-check-label">Bacon</label>
-            </div> <br>
-            <div class="form-check-inline">
-                <input class="form-check-input" name="toppings" type="checkbox" value="Pepperoni">
-                <label class="form-check-label">Pepperoni</label>
-            </div>
-            <div class="form-check-inline">
-                <input class="form-check-input" name="toppings" type="checkbox" value="Sausage">
-                <label class="form-check-label" >Sausage</label>
-            </div>
-            <div class="form-check-inline">
-                <input class="form-check-input" name="toppings" type="checkbox" value="Pineapple">
-                <label class="form-check-label">Pineapple</label>
-            </div><br>
-            <div class="form-check-inline">
-                <input class="form-check-input" name="toppings" type="checkbox" value="Spinach">
-                <label class="form-check-label">Spinach</label>
-            </div>
-           
-            <div class="form-check-inline">
-                <input class="form-check-input" name="toppings" type="checkbox" value="Chicken">
-                <label class="form-check-label">Chicken</label>
-            </div> <br>
-            <button id="p-order" type="submit" >Make Order</button>
-        </form>
-      
-    </div>
-    
-    </section>
+        </div>
+    </section>    
+        
+        
     <section>
         <section id="contact">
             <div class="form">
@@ -231,6 +308,6 @@
 
     <footer>Copyright 2022  Designed by <a href="https://github.com/martin023">Maina</a> </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+    <script src="./js/index.js"></script>
 </body>
 </html>
