@@ -102,25 +102,35 @@ img{
 .chef{
     background-color: #c2bfbf;
     height: 80vh;
+    
 }
 
 .chef img{
+    display: flex;
     float: left;
     height: 70vh;
     width: 100vh;
-    padding-left: 30%;
+    padding-left: 30%; 
 }
 .chef div{
     float: right;
     padding-right: 20%;
 
 }
+#imgposition{
+    float: left;
+
+
+}
 .chef p{
-    padding-left: 70%;
+    
+    display: flex;
+    float: right;
+    text-align: center;
 }
 /* Making an order */
 #order{
-    background-image: ;
+    
     padding-left: 30%;
     padding-right: 30%;
     color: black;

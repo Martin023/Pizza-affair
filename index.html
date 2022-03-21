@@ -15,9 +15,8 @@
     rel="stylesheet"
     />
     <!-- MDB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css"
-    rel="stylesheet"
-    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
         <title>Welcome to pizza joint</title>
 </head>
 <body>
@@ -68,7 +67,7 @@
                     <img src="assets/pizza3.jpg" alt="chicago img">
                     <div class="card-body">
                       <h5 class="card-title">New-York Pizza</h5>
-                      <p class="card-text">With its characteristic large, foldable slices and crispy outer crust, New York-style pizza is one of America’s most famous regional pizza types.<br>
+                      <p class="card-text">With its characteristic large, foldable slices<br> and crispy outer crust, New York-style pizza is one of America’s most famous regional pizza types.<br>
                          Originally a variation of Neapolitan-style pizza, the New York slice has taken on a fame all its own, with some saying its unique flavor has to do with the minerals present in New York’s tap water supply.</p>
                       
                     </div>
@@ -126,15 +125,16 @@
 
     <section class="chef">
         <h1>MEET OUR CHEF</h1>
-        <div>
-            <img src="assets/images/louis-hansel  chef.jpg" alt="Chef">
-            <p>Lorem ipsum dolor sit amet consectetur adipi
-                sicing elit. Ad minus accusantium neque nesciunt f
-                ugiat eum in quia sint doloremque quidem, ex c
-                ommodi, magni cum, 
-                dolore nihil quasi quam ipsa consequuntur?</p>
+        <div id="imgposition">
             <!-- img -->
+            <p>With over 30 years experience chef Mwiks has vast <br>
+            knowledge in pizza preparation and baking<br>
+            You can trust him for customised pizzas and many more <br>
+            unique recipes</p>
+            <img src="assets/images/louis-hansel  chef.jpg" alt="Chef">
+            <!-- text -->
         </div>
+        <div><</div>
         
     </section>
     <section id="order">
@@ -145,7 +145,7 @@
                    <div class="order-red">
                     <form id="make-pizza" action="">
                         <div class="form-group">
-                            <label for="size">Select Pizza Size</label>
+                            <label for="size"> Pizza Size</label>
                             <select class="form-select text-light my-2" aria-label="Default select example" id="size" required>
                                 <option value="Large">Large(Ksh 1000)</option>
                                 <option value="Medium">Medium(Ksh 700)</option>
@@ -155,14 +155,12 @@
                         <div class="form-group">
                             <label for="crust">Select Crust type</label>
                             <select class="form-select text-light my-2" aria-label="Default select example" id="crust" required>
-                                <option value="Butter-Cheese">Butter-Cheese(Ksh 200)</option>
-                                <option value="Garlic-buttery-blend">Garlic-buttery-blend(Ksh 180)</option>
-                                <option value="Gluten-free">Gluten-free(Ksh 250)</option>
-                                <option value="Fiery-red-pepper">Fiery-red-pepper(Ksh 150)</option>
+                                <option value="Thick-crust">Thick-crust (200sh)</option>
+                                <option value="Thin-crust">Thin-Crust (150sh)</option>
                             </select>
                         </div>
                         <div class="form-group my-3">
-                            <label for="amount">Select Pizza amount</label> <br>
+                            <label for="amount">How many pieces?</label> <br>
                             <input class="text-light" type="number" min="1" id="amount" placeholder="Number of pizzas" required>
                         </div>
             
@@ -182,28 +180,21 @@
                             <input class="form-check-input" name="toppings" type="checkbox" value="Sausage">
                             <label class="form-check-label" >Sausage</label>
                         </div>
-                        <div class="form-check-inline">
-                            <input class="form-check-input" name="toppings" type="checkbox" value="Pineapple">
-                            <label class="form-check-label">Pineapple</label>
-                        </div><br>
+                       
                         <div class="form-check-inline">
                             <input class="form-check-input" name="toppings" type="checkbox" value="Spinach">
-                            <label class="form-check-label">Spinach</label>
-                        </div>
-                        <div class="form-check-inline">
-                            <input class="form-check-input" name="toppings" type="checkbox" value="Black Olives">
-                            <label class="form-check-label" >Black Olives</label>
+                            <label class="form-check-label">Garlic Sauce</label>
                         </div>
                         <div class="form-check-inline">
                             <input class="form-check-input" name="toppings" type="checkbox" value="Chicken">
                             <label class="form-check-label">Chicken</label>
                         </div> <br>
-                        <button id="p-order" type="submit" >Make Order</button>
+                        <button id="p-order" type="submit" >Confirm Order</button>
                     </form>
                     <div class="order">
                         <p>You have ordered: <br> <strong><span></span></strong></p>
                         <p>Would you like to:</p>
-                        <button id="deliver" type="button" >Get it delivered</button>  <button id="instore">instore pick-up</button>
+                        <button id="deliver" type="button" >Home Delivery</button>  <button id="instore">Store pick-up</button>
                     </div>
                     <div class="location">
                         <form action="">
@@ -212,11 +203,11 @@
                         </form>
                     </div>
                     <div class="delivery">
-                        <p>Your delivery to <strong><span></span></strong> is being processed and will cost Ksh 200</p>
+                        <p>Your delivery to <strong><span></span></strong> is on the way @ only Ksh 200</p>
                         <button class="checkout" type="button" >Checkout</button>
                     </div>
                     <div class="pick-up">
-                        <p>Your Order will be ready in 45 minutes</p>
+                        <p>Come for your order</p>
                         <button class="checkout" type="button" >Checkout</button>
                     </div>
                 </div>
@@ -276,7 +267,7 @@
     <section>
         <section id="contact">
             <div class="form">
-                <h3 class="title">Get In Touch</h3>
+                <h3 class="title">Reach Us Through</h3>
                 <form action="">
                     <div>
                         <input type="text" name="name" id="name" placeholder="Name . . .">
@@ -288,15 +279,15 @@
             </div>
             <div class="contact-info">
                 <h3 class="info">
-                    Contact Info
+                    Contact us 
                 </h3>
                 <div>
                     <svg aria-hidden="true" role="img" viewBox="0 0 24 24"><g fill="none" stroke="#ca0808" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8Z"/></g></svg>
-                    <P>GreatWall Shopping center Phase One</P>
+                    <P>VEGAS mall</P>
                 </div>
                 <div>
                     <svg aria-hidden="true" role="img" viewBox="0 0 24 24"><g fill="none" stroke="#ca0808" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m15 16l-2.414-2.414A2 2 0 0 1 12 12.172V6"/></g></svg>
-                    <p> Monday - Saturday: 10am - 10pm</p>
+                    <p> Monday - Saturday: 9am - 10pm</p>
                 </div>
                 <div>
                     <svg aria-hidden="true" role="img" viewBox="0 0 24 24"><path fill="#ca0808" d="M20 10.999h2C22 5.869 18.127 2 12.99 2v2C17.052 4 20 6.943 20 10.999z"/><path fill="#ca0808" d="M13 8c2.103 0 3 .897 3 3h2c0-3.225-1.775-5-5-5v2zm3.422 5.443a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66c-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a1 1 0 0 0-.086-1.391l-4.064-3.696z"/></svg>
@@ -308,6 +299,6 @@
 
     <footer>Copyright 2022  Designed by <a href="https://github.com/martin023">Maina</a> </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="./js/index.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

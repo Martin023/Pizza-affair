@@ -15,13 +15,9 @@ Order.prototype.cost = function(){
         var sizePrice = 500;
     }
 // prices for different crusts
-    if(this.crust === "Butter-Cheese"){
+    if(this.crust === "Thick-crust"){
         var crustPrice = 200;
-    }else if (this.crust === "Garlic-buttery-blend"){
-        var crustPrice = 180;
-    }else if (this.crust === "Gluten-free"){
-        var crustPrice = 250;
-    }else if(this.crust === "Fiery-red-pepper"){
+    }else if (this.crust === "Thin-crust"){
         var crustPrice = 150;
     }
 // checkbox prices
