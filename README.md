@@ -5,14 +5,15 @@ Areas of learning targeted are BDD, jQuery, Responsive design, constructors and 
 Here is the live demo :https://martin023.github.io/Pizza-affair/
 ## Table of Contents
 https://github.com/Martin023/Pizza-affair/blob/gh-pages/README.md#screenshot-of-the-page
--   [Description](## Description)
--   [Screen-shot](screenshot-of-the-page)
--   [Installation instructions](#setup instructions)
--   [Bahaviour driven development](## Behaviour Driven Development)
--   [Known bugs](## Known Bugs)
--   [To do's](## To do's)
 
--   [Authors Info](## Support and contact details)
+-   [Screen-shot](screenshot-of-the-page)
+-   [Description](#description)
+-   [Installation instructions](#setup-instructions)
+-   [Bahaviour driven development](#behaviour-driven-environment)
+-   [Known bugs](#known-bugs)
+-   [To do's](#to-do's)
+
+-   [Authors Info](#support-and-contact-details)
 -   [Licence](#licence)
 
 ## Screenshot of the page
