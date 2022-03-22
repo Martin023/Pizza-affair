@@ -6,12 +6,16 @@ Here is the live demo :https://martin023.github.io/Pizza-affair/
 ## Table of Contents
 
 -   [Description](#description)
--   [Installation Requirement](#usage)
--   [Technology Used](#technologies)
+-   [Screen-shot](#screnshot of the page)
+-   [Installation instructions](#setup instructions)
+-   [Bahaviour driven development](#behaviour driven development)
+-   [Known bugs](#known bugs)
+-   [To do's](#to do's)
 -   [Licence](#licence)
 -   [Authors Info](#author-info)
 
 ## Screenshot of the page
+![pizza affair](https://user-images.githubusercontent.com/36125591/159416166-5edafa82-3782-4b22-9f98-2e9524f398ae.png)
 
 
 ## Description
